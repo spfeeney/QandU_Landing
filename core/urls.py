@@ -3,5 +3,6 @@ from .views import *
 
 urlpatterns = patterns('',
                        url(r'^$', Home.as_view(), name='home'),
+                       url(r'^success/$', Success.as_view(), name='success'),
                        url(r'^question/create/$', QuestionCreateView.as_view(), name='question_create'),
                       )
